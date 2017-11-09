@@ -22,6 +22,7 @@ public class Masodik_Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Vissza_Menube = new Intent(Masodik_Activity.this,MainActivity.class);
                 startActivity(Vissza_Menube);
+                finish();       //FONTOS PARANCS KÜLÖNBEN, HA ÁT LÉPÜNK A MÁSIK ACTIVITYRE AKKOR MÉG MEG LESZ NYITVA!!!!!
             }
         });
     }

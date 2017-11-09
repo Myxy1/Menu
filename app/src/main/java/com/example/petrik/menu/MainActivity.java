@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 //intentet kell itt használni (első adat amit megadtunk = itteni Activity neve, második adat amit megadtunk = másik Activity neve)
                 Intent intent = new Intent(MainActivity.this,Masodik_Activity.class);
                 startActivity(intent);      //elindítjuk ezt a folyamatot.
+                finish();
             }
         });
 
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent Mentes_Activityre = new Intent(MainActivity.this,Mentes_Activity.class);
                 startActivity(Mentes_Activityre);
+                finish();   //FONTOS PARANCS KÜLÖNBEN, HA ÁT LÉPÜNK A MÁSIK ACTIVITYRE AKKOR MÉG MEG LESZ NYITVA!!!!!
             }
         });
 

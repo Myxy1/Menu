@@ -37,6 +37,7 @@ public class Mentes_Activity extends AppCompatActivity {
                 Intent Vissza_Menube = new Intent(Mentes_Activity.this,MainActivity.class);
                 startActivity(Vissza_Menube);
                 Toast.makeText(Mentes_Activity.this, "Adat mentve!", Toast.LENGTH_SHORT).show();
+                finish();//FONTOS PARANCS KÜLÖNBEN, HA ÁT LÉPÜNK A MÁSIK ACTIVITYRE AKKOR MÉG MEG LESZ NYITVA!!!!!
             }
         });
 
